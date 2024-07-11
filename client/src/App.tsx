@@ -3,10 +3,12 @@ import Home from "./pages/Home/Home";
 import Auth from "./pages/Authentication/Auth";
 import Todo from "./pages/TODOS/Todo";
 import Error from "./pages/Error/Error";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
